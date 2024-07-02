@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>RNASeq methods from Williams et al. Genetics, 2023</title>
+<head>
+<style>
+p
+{
+    text-indent: 10px;
+}
+</style>
+<body>
+<p>
+This text is an excerpt from the paper.
+</p>
+
+<h2>Contents</h2>
+
+<p>
+    <ol>
+        <li><a href="#culture-and-preperation-of-dissociated-cells"><i>C. elegans</i> culture and preparation of dissociated <i>C. elegans</i> cells</a></li>
+        <li><a href="FACS-isolation-of-intestine-cells">FACS-isolation-of-intestine-cells</a></li>
+        <li><a href="RNA-extraction">RNA extraction</a></li>
+        <li><a href="RNA-seq-library-preparation-and-analysis">RNA-seq library preparation and analysis</a></li>
+    </ol>
+</p>
+
+
+<h2 id="culture-and-preperation-of-dissociated-cells"><i>C. elegans</i> culture and preparation of dissociated <i>C. elegans</i> cells</a></h2>
+
+<p>
+A detailed protocol for C. elegans culture is available on the protocols.io platform: <a href=dx.doi.org/10.17504/protocols.io.8epv59zjng1b/v2>dx.doi.org/10.17504/protocols.io.8epv59zjng1b/v2</a>. In brief, C. elegans were cultured on agar-based NGM plates to reduce any confounding effects that may be introduced by large-scale liquid culture. To produce synchronized cultures sufficient for FACS, two rounds of mixed-stage culture growth were performed followed by two rounds of synchronized growth. C. elegans were fed E. coli strain OP50 and maintained at 20°C. Synchronized worm populations were achieved through hypochlorite treatment.
+</p>
+
+<p>
+For embryo stage experiments, ~100,000 synchronized embryos were seeded onto 20 total 150 mm NGM plates at a density of ~5,000 embryos per plate. Worms were cultured for 72 hours until gravid and harvested for mixed-stage embryos through hypochlorite treatment. Embryo-stage worms were dissociated through Chitinase and Pronase E treatment and mechanical disruption with a 21-gauge syringe needle. A detailed protocol for embryo dissociation is available on the protocols.io platform: 
+<a href="https://dx.doi.org/10.17504/protocols.io.dm6gpbw9plzp/v1">https://dx.doi.org/10.17504/protocols.io.dm6gpbw9plzp/v1</a>
+</p>
+
+<p>
+For L1 stage experiments, mixed-stage embryos were synchronized to the L1 stage by incubating in M9 overnight rotating in a 20°C incubator for 24 hours. L1 worms were then fed OP50 E. coli on peptone-enriched NGM plates for six hours before cell dissociation to reduce any observable starvation-induced responses in the measured transcriptional data. L1 stage worms were dissociated through SDS-DTT and Pronase E treatment and mechanical disruption with a Dounce homogenizer. A detailed protocol for L1 dissociation is available on the protocols.io platform: <a href="https://dx.doi.org/10.17504/protocols.io.rm7vzy365lx1/v1">https://dx.doi.org/10.17504/protocols.io.rm7vzy365lx1/v1</a>
+</p>
+<p>
+For L3 stage experiments, synchronized L1 worms were cultured for an additional 48 hours on peptone-enriched NGM plates for 48 hours at 20°C. L3 stage worms were dissociated similarly to L1, where the final centrifugation speed for cell harvest was reduced from 100 rcf to 20 rcf. A detailed protocol for L3 dissociation is available on the protocols.io platform: <a href="https://dx.doi.org/10.17504/protocols.io.14egn7zwmv5d/v1">https://dx.doi.org/10.17504/protocols.io.14egn7zwmv5d/v1</a>
+</p>
+
+<h2 id="FACS-isolation-of-intestine-cells">FACS-isolation-of-intestine-cells</h2>
+
+<p>
+GFP+ intestine cells were isolated from GFP- non-intestine cells by FACS using a BD FACSAria III cell sorter. Additional dyes were used depending on the developmental stage. For embryo stage experiments, viability dye propidium iodide was used to separate live cells (PI-) from dead cells (PI+). For L1 stage experiments, viability dyes were not used because preliminary experiments identified that intestine cells preferentially take up viability dyes confounded sorting (data not shown). For L3 stage experiments, viability dyes are also not used. We observed that L3 stage cell preps have a high degree of debris, so a cell-permeable nucleic acid dye such as DRAQ5 was used to distinguish cells (DRAQ5+) from debris (DRAQ5-). FACS plots and post-hoc analysis were performed with FlowJo (v 10) (Figure 1, S1). Cell staining protocols and gating strategies (Figure S1) are available on the protocols.io platform: <a href="https://dx.doi.org/10.17504/protocols.io.j8nlkk43dl5r/v1">https://dx.doi.org/10.17504/protocols.io.j8nlkk43dl5r/v1</a>
+</p>
+
+<p>
+Approximately 300,000 GFP+ intestine cells and 1,000,000 GFP- non-intestine cells were collected for RNA isolation for each developmental stage. Three biological replicates for each developmental stage were performed (File S1). FACS isolated cells were pelleted by centrifuging at 10,000 rcf for 5 mins in a 4°C cooled centrifuge. The supernatant was removed from the cell pellet and resuspended in 1 ml Qiazol for RNA extraction. Cells in Qiazol were stored at -80°C until RNA extraction was performed.
+</p>
+
+<h2 id="RNA-extraction">RNA extraction</h2>
+
+<p>
+Total RNA extractions were performed with miRNeasy Micro kit (Qiagen 217084). RNA quantity was measured using a Qubit 3.0 fluorometer (Thermo Fisher Q33216) and Qubit High Sensitivity RNA assay kit (Thermo Fisher Q32852). RNA was of a consistently high quality (RIN &gt; 8.0) as determined on an Agilent 2200 TapeStation using high sensitivity RNA reagents (Agilent 5067-5579). Total RNA samples were stored at -80°C until RNA-seq library preparation was performed.
+</p>
+
+<h2 id="RNA-seq-library-preparation-and-analysis">RNA-seq library preparation and analysis</h2>
+<p>
+To measure the intestine-specific transcriptome, RNA-seq library preparation was performed with the NEBNext Ultra II RNA Library Prep Kit and sequenced with the Illumina platform (NEB E7770S). Ribosomal RNAs (rRNAs) were depleted through the NEBNext Poly(A) mRNA Magnetic Isolation Module (NEB E7490S). All samples were sequenced on the Illumina NovaSeq 6000 instrument except for replicates 1 and 2 for L1 stage samples, which were sequenced on an Illumina HiSeq X-ten instrument. All raw sequencing and processed files are publicly available on NCBI GEO under Accession GSE214581 and accessible at <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?&amp;acc=GSE214581">https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?&amp;acc=GSE214581</a>  with Reviewer Token Link: ixuzuasmhlurjit. The gtf alignment files used in this analysis are also deposited there. The raw sequencing files are available at SRA (Short Read Archive) under Project PRJNA885900. 
+</p>
+
+<p>
+Sequencing reads were processed using a custom pipeline on the Rocky Mountain Advanced Computing Consortium Summit Supercomputer (File S2). The processing pipeline included the following steps: 1) sequencing reads were filtered for low quality or adapter sequence containing reads with fastp (v 0.20.0) (Chen et al. 2018), 2) aligned to the ce11 C. elegans genome (c_elegans.PRJNA13758.WS263.canonical_geneset.gtf) with hisat2 (v 2.1.0) (Kim et al. 2019), 3) tabulated for the number of mapped reads aligning to the WS263 genome assembly using featureCounts (v 1.6.4) (Liao et al. 2014). 
+</p>
+
+<p>
+Differential expression analysis and plotting were performed with the DESeq2 package (v 1.28.1) in the R Environment (v 4.0.3, BiocManager, v 1.30.10, tidyverse v 1.3.1; File S3) (Love et al. 2014; Wickham et al. 2019; Morgan 2021; Team 2021). RNA-seq count data were filtered for detected genes (&gt; 10 counts per million across all samples). To visualize genome-wide similarities between samples, sample-to-sample Euclidian distances were calculated using the Complete cluster method on normalized, variance-stabilized, log transformed count data (Figure S2). In all pairwise differential expression analyses, genes were identified as differentially expressed if they had a normalized log2-transformed fold change value greater than 1 with a Benjamini-Hochberg corrected p-value less than 0.01 (Figure 2, Figure S3). UpSet plots were generated with the UpSet function of ComplexHeatmap (v 2.8.0) (Gu et al. 2016).
+</p>
+
+</body>
+</html>
