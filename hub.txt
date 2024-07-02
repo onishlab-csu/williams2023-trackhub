@@ -1,0 +1,6 @@
+hub Williams2023
+shortLabel Tracks Accompanying Williams2023
+longLabel Tracks Accompanying Williams et al. Genetics, 2023
+genomesFile genomes.txt
+email dcking@colostate.edu
+descriptionUrl description/index.html
