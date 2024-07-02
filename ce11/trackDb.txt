@@ -1,5 +1,5 @@
 track L1_intestine_cells_merged
-container L1_intestine_cells_merged
+container multiWig
 aggregate solidOverlay
 type bigWig
 maxHeightPixels 50:50:11
