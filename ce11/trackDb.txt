@@ -5,6 +5,7 @@ type bigWig
 maxHeightPixels 50:50:11
 shortLabel L1 intestine RNA-seq
 longLabel L1 intestine GFP+ sorted cells RNA-seq
+visibility full
 
    track L1_intestine_cells_merged/L1_intestine_cells_merged.chrI
    parent L1_intestine_cells_merged
