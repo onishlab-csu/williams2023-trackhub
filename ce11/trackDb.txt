@@ -1,3 +1,24 @@
+track LE_ELT2_ChIP
+shortLabel Late embryo ELT-2 ChIP-seq
+longLabel ModERN Late embryo ELT-2 ChIP-seq
+bigDataUrl ChIPSeq/ELT2_LE_combined_IDR.bigbed
+visibility dense
+type bigBed
+
+track L1_ELT2_ChIP
+shortLabel L1 ELT-2 ChIP-seq
+longLabel ModERN Larval stage 1 ELT-2 ChIP-seq
+bigDataUrl ChIPSeq/ELT2_L1_combined_IDR.bigbed
+visibility dense
+type bigBed
+
+track L3_ELT2_ChIP
+shortLabel L3 ELT-2 ChIP-seq
+longLabel ModERN Larval stage 3 ELT-2 ChIP-seq
+bigDataUrl ChIPSeq/ELT2_L3_combined_IDR.bigbed
+visibility dense
+type bigBed
+
 track embryo_intestine_cells_merged
 container multiWig
 aggregate solidOverlay
